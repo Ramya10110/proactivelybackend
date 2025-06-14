@@ -1,0 +1,30 @@
+.center-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 7px solid #43cea2;
+  border-top: 7px solid #185a9d;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+.center-animation-text {
+  font-size: 1.3rem;
+  color: #185a9d;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}

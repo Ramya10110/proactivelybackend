@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --primary-teal: #43cea2;
+  --primary-blue: #185a9d;
+  --primary-gradient: linear-gradient(120deg, #43cea2 0%, #185a9d 100%);
+  --secondary-gradient: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  --hover-gradient: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+  --text-dark: #185a9d;
+  --text-light: #e0f7fa;
+  --bg-light: #e0f7fa;
+  --bg-white: #fff;
+}
+
+body {
+  background: var(--primary-gradient);
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--primary-gradient);
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.1rem;
+  margin: 2.2rem 0 1.2rem 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--primary-blue);
+  background: #fff;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border-radius: 8px;
+  display: inline-block;
+  text-transform: uppercase;
+  box-shadow: 0 2px 16px 0 rgba(24, 90, 157, 0.10);
+  border-bottom: 3px solid var(--primary-teal);
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadein 1.2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.form-container {
+
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(24, 90, 157, 0.12);
+  padding: 3rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+form {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--primary-teal);
+  font-size: 0.97rem;
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--bg-light);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  color: var(--text-dark);
+}
+
+input:focus, select:focus {
+  border: 1.5px solid var(--primary-blue);
+  outline: none;
+  box-shadow: 0 0 8px #43cea233;
+  background: #fff;
+}
+
+select {
+  background: var(--secondary-gradient);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 1px 3px #185a9d22;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:hover, select:focus {
+  background: var(--hover-gradient);
+  color: #fff;
+}
+
+option {
+  background: #fff;
+  color: var(--primary-blue);
+}
+
+button {
+  background: var(--secondary-gradient);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px #185a9d22;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem 0.9rem;
+}
+
+button:hover, button:focus {
+  background: var(--hover-gradient);
+  transform: translateY(-2px) scale(1.02);
+}
+
+h2, h3, h4 {
+  color: var(--primary-blue);
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+}
+
+label {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+ul {
+  background: var(--bg-light);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+}
+
+span[style*="orange"], .locked {
+  color: var(--primary-teal) !important;
+  font-weight: bold;
+}
+
+div[style*="red"] {
+  color: #e74c3c !important;
+  font-weight: bold;
+}
+
+div[style*="green"] {
+  color: #27ae60 !important;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--bg-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-teal);
+  border-radius: 8px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .form-container {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .main-title {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.8rem 0;
+    padding: 0.5rem 0.5rem;
+  }
+}
