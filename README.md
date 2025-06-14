@@ -3,7 +3,7 @@
 A modern, real-time collaborative form builder and editor, inspired by Google Docs but for structured forms.
 Built with Node.js, Express, PostgreSQL, React, Socket.io, and a beautiful teal-themed UI.
 
-🚀 Features
+# 🚀 Features
 Admins:
 
 Register/login securely
@@ -12,7 +12,7 @@ Create forms with dynamic fields (text, number, dropdown, etc.)
 
 Instantly get an invite code to share with collaborators
 
-Users:
+# Users:
 
 Register/login securely
 
@@ -28,13 +28,13 @@ Socket.io powers instant updates
 
 Field-level locking to prevent overwrite conflicts
 
-Modern UI:
+# Modern UI:
 
 Professional, responsive, and themed in blush green/teal
 
 Clean navigation bar, animated landing video, and smooth forms
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Backend: Node.js, Express, PostgreSQL (Sequelize ORM), Socket.io, JWT Auth
 
 Frontend: React, React Router, Axios, Socket.io-client
@@ -43,14 +43,15 @@ Styling: CSS (custom, with gradients and responsive design)
 
 Deployment-ready: Dockerizable, or run locally
 
-📦 Folder Structure
+# 📦 Folder Structure
 text
 collab-form-app/
 ├── backend/
 │   └── ... (Express, Sequelize, Socket.io backend)
 ├── frontend/
 │   └── ... (React app with all components)
-⚡ Quick Start
+
+# ⚡ Quick Start
 1. Clone the Repo
 bash
 git clone https://github.com/yourusername/collab-form-app.git
@@ -72,7 +73,7 @@ DB_NAME=collabform
 DB_PORT=5432
 Create your database and user in PostgreSQL as per instructions in the repo.
 
-3. Frontend Setup
+# 3. Frontend Setup
 bash
 cd ../frontend
 npm install
@@ -81,7 +82,7 @@ The app will run at http://localhost:3000
 
 The backend runs at http://localhost:5000
 
-📝 Usage
+# 📝 Usage
 Register as an Admin or User.
 
 Admins can create forms, add dynamic fields, and get invite codes.
@@ -96,17 +97,17 @@ Field-level locking prevents accidental overwrites.
 
 Navigation bar lets you switch between Home, Login, Register, Create/Join Form, and Collaborative Form.
 
-🎨 Customization
+# 🎨 Customization
 Landing Page Video:
 Place your banner.mp4 in frontend/src/components/ and it will show on the home page.
 
 Theme:
 All colors and gradients are easily adjustable in App.css.
 
-🧩 API Endpoints
+# 🧩 API Endpoints
 See backend API docs or use the included Postman collection.
 
-🏆 Key Design Decisions
+# 🏆 Key Design Decisions
 Real-time editing: Socket.io for fast, reliable updates
 
 Field locking: Prevents race conditions and conflicting edits
@@ -117,17 +118,17 @@ Responsive UI: Works on desktop and mobile
 
 Separation of concerns: Cleanly separated backend and frontend
 
-🐞 Troubleshooting
+# 🐞 Troubleshooting
 Port conflicts? Change PORT in .env or package.json.
 
 DB errors? Make sure PostgreSQL is running and credentials are correct.
 
 Socket.io not updating? Ensure both frontend and backend are running and CORS is allowed.
 
-📄 License
+# 📄 License
 MIT.
 Feel free to fork, use, and contribute!
 
-🙏 Credits
+# 🙏 Credits
 Made with ❤️ by Ramya and contributors.
 Inspired by Google Docs, Typeform, and modern collaborative tools.
